@@ -1,0 +1,29 @@
+codigo = ('6550126 MMR')
+DICIONÁRIO = {
+  '6':'F',
+  
+  '5':'E',
+  
+  '50':'L',
+  
+  '1':'I',
+  
+  '26':'Z',
+  
+  'MM':'2000',
+  
+  'R':'18'
+}
+mensagem=input('Digite o código: ')
+numeros = ['6', '5', '50', '1', '26']
+mensagem = ''.join(DICIONÁRIO[cod] for cod in numeros)
+
+MM = 2000
+R = 18
+num = MM+R
+
+if mensagem == "6550126MMR":
+  print('Código Incorreto')
+
+else:
+  print(mensagem, num)
